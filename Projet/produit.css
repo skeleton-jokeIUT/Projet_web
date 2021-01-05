@@ -1,0 +1,473 @@
+html 
+{
+   font-family: 'MedievalSharpBookOblique';
+   font-weight: normal;
+   background-image:url(img/fond_bois.jpg);  
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+
+h1
+ {
+ 	margin-top: 0em;
+ 	text-align: center;
+ 	padding: 25px;
+ 	
+ }
+
+h2
+{
+	font-size: 1.8em;
+}
+
+header
+{
+	border-bottom-style: ridge;
+	border-radius: 1em;
+	height: 7em;
+	background-color: rgb(79,79,79);
+
+}
+
+header img
+ {
+ 
+ 	float :left;
+
+ 	
+ }
+
+
+.recherche button
+{
+	background: transparent;
+}
+
+.recherche span
+{
+	position: absolute;
+	top : 8.2em;
+	right :1.5em;
+
+}
+
+
+.recherche button
+{
+	background-color: white;
+}
+
+form
+{
+	text-align: center;
+	width: 30em;
+	height: 3em;
+	margin-left: 36.5%;
+	background:rgb(79,79,79);
+	margin-top: 1em;
+	margin-bottom: -1.2em;
+	border-style: ridge;
+	border-radius: 1em;
+}
+input
+{
+	height: 2em;
+	width: 15em;
+}
+
+select
+{
+	height: 1.5em;
+}
+
+ul
+ {
+ 	display: block;
+ 	text-align: center;
+ 	
+ 	background-color: rgb(79,79,79);
+ 	margin-top: 1em;
+ 	border-style:ridge;
+ 	border-radius: 1em;
+
+ }
+
+section ul li
+ {
+display: inline-block;
+padding-top: 10px;
+font-size: 1.4em;
+width: 24%;
+height: 30px;
+}
+
+#image
+{
+	padding-bottom: 4%;
+}
+
+section
+{
+	color: pink;
+}
+
+
+.description
+{
+
+	overflow: auto;
+	width: 40%;
+	height: 22em;
+	margin-left: 32%;
+	margin-top: -23.5%;
+	border-style :ridge none ridge ridge;
+	border-radius: 1em 0 0 1em;
+
+}
+
+h3
+{
+
+	color: slategray;
+	font-size:1.5em;
+	text-decoration: underline;
+
+}
+
+.contenu
+{
+	
+	width: 20%;
+	border-style: ridge;
+	border-radius: 1em;
+	position :absolute;
+	top :105%;
+	left:5%;
+}
+
+
+ 
+
+ h2
+{
+	color :white;
+}
+
+.none
+{
+	position: absolute;
+	display: none; 
+}
+
+
+.commande
+{
+
+	position: fixed;
+	top:40.5%;
+	right: 2%;
+	background:rgb(79,79,79);
+	border-style: ridge;
+	border-radius: 1em;
+	width: 18%;
+	height: 30%;
+}
+
+
+
+.commande form
+{
+
+	border-style: none;
+	text-align: left;
+	margin-left: 0em;
+	width: 95%;
+	height: 35%;
+	color: white;
+	background:rgb(79,79,79);
+}
+
+.commande label
+{
+	margin-bottom: 10em;
+}
+
+.commande input
+{
+	width:5em;
+}
+
+.commande button
+{
+	background-color: white;
+	border-style:ridge;
+	box-shadow: 1px 1px 1px;
+	
+}
+
+.commande p
+{
+	font-size: 1.2em;
+	color: black;
+	font-weight: bold;
+}
+
+
+.avis
+{
+	height: 30em;
+	width: 50%;
+	margin-left: 28%;
+	text-align: left;
+	padding-top: 3%;
+}
+
+.avis h2
+{
+	text-align: center;
+
+}
+
+.avis h3
+{
+	font-size: 1em;
+	text-decoration: underline;
+	color: white
+}
+
+.avis p
+{
+margin-top: -2%
+}
+
+.UL1
+ {
+ 	display: block;
+ 	text-align: center;
+ 	margin-top: 2em;
+ 	margin-bottom: -1em;
+ 	border-bottom-style: ridge;
+ 	background-color: rgb(79,79,79);
+ }
+
+.UL1 li
+ {
+
+display: inline-block;
+padding-top: 10px;
+font-size: 0.8em;
+width: 24%;
+height: 10px;
+}
+
+
+
+
+
+.img
+{
+	width: 30%;
+
+}
+
+
+
+img{
+
+max-width: 100%;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+
+display: none
+
+}
+
+.cadre_diapo
+
+{
+max-width: 400px;
+margin-left : 1em;
+margin-top:16%;
+overflow: hidden;
+
+}
+
+.interieur_diapo
+
+{
+	
+display: flex;
+width: 400%;
+transition: transform .6s ease-in-out
+
+}
+
+.descript
+
+{
+
+position: relative;
+
+}
+
+
+	
+	
+#id1:target ~ .cadre_diapo .interieur_diapo
+{
+transform:translatex(0)
+}
+
+#id2:target ~ .cadre_diapo .interieur_diapo
+{
+transform:translatex(-25%)
+}
+
+#id3:target ~ .cadre_diapo .interieur_diapo
+{
+transform:translatex(-50%)
+}
+
+
+
+
+
+
+/*navigation avec images miniatures*/
+.navigation_diapo
+{
+
+display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color:transparent;
+border-style: none;
+}
+
+
+
+.navigation_diapo li 
+{
+	padding: .25rem;
+	height: 3em;
+	border-style: none;
+}
+
+.navigation_diapo img
+{
+
+box-shadow:0 0 5px hsla(0,0%,0%,.4);
+}
+	
+
+
+	
+
+
+
+.grid img
+{
+	border-style: ridge;
+	border-width: 0.3em;
+	width:  10em;
+	box-shadow: 6px 6px 2px black;
+	max-height: 150px;
+
+
+}
+.grid p  
+{
+	color : pink;
+	margin-top: 0em;
+	width: 15em;
+	height: 5em;
+
+}
+
+.grid a 
+{
+	color : white;
+
+}
+
+.grid
+{
+	margin-top: 2em;
+	margin-left:2em;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 1fr 1fr;
+	border-radius: 1em;
+
+}
+
+.ite1
+{
+grid-area : 1 / 1 / 2 / 3;
+
+}
+
+.ite2
+{
+grid-area : 2 / 1 / 2 / 2;
+padding-top: 2em;
+margin-left: : 2em;
+}
+
+.ite3
+{
+grid-area : 1 / 2 / 2 / 3;
+
+}
+
+.ite4
+{
+grid-area : 2 / 2 / 3 / 3;
+padding-top: 2em;
+margin-left: : 2em;
+}
+
+.ite5
+{
+grid-area : 1 / 3 / 2 /4 ;
+
+}
+
+.ite6
+{
+grid-area : 2 / 3 / 3 / 4;
+padding-top: 2em;
+padding-right: 10em;
+}
+
+.produit h2
+{
+	margin-top: -18px;
+	margin-left: 9.25%;
+	width: 23%;
+	text-align: center;
+	color :white;
+	background-image:url(img/fond_bois.jpg);
+}
+
+.produit
+{
+	border-style: ridge;
+	border-radius: 1em;
+	width: 70%;
+}

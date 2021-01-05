@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="panier_plein.css" />
+        <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/kjv-1611" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/medievalsharp" type="text/css"/>
+
+        <title>Panier_plein</title>
+    </head>
+
+<body>
+        <header>
+            <div><img src="img/logo.jpg" alt="logo"> </div>
+            <h1>LA CONTREE</h1>
+        </header>
+
+        <section class="recherche">
+                <h2 class="none">Recherche</h2>
+              <form action="recherche.html" method="post">
+
+                <select name="Catégorie">
+                    <option>Toutes les catégories</option>
+                    <option>Jeux de société</option>
+                    <option>Jeux de rôle</option>
+                    <option>Party Games</option>
+                    <option>Jeux-vidéo</option>
+                </select>
+
+                <input type="text" name="recherche">
+
+                    <button name="loupe" value="submit">
+                <img src="img/yolo.png" alt="recherche">
+                    </button>
+
+              </form>
+
+               <span>
+            <a href="panier_vide.html"><img src="img/panier.png" alt="panier"></a>
+                    <a href="acceuil.html"><img src="img/compte.png" alt="compte"></a>
+                    <a href="acceuil.html"><img id="image" src="img/maison.png" alt="acceuil"></a>
+              </span>
+
+        </section>
+
+        <section>
+            <h2 class="none">Encart</h2>
+           <ul id="UL1">
+                <li><a href="produit.html">Catégorie</a></li>
+                <li><a href="acceuil.html#VF">Promotions</a></li>
+                <li><a href="acceuil.html#VE">En vedette</a></li>
+                <li><a href="produit.html">Les pépites</a></li>
+            </ul>
+        </section>
+
+
+        <section class="panier">
+            <h2>Panier</h2>
+
+            <img src="img/seven.png" alt="Seven Wonders">
+            <p>Seven wonders</p>
+
+            <form action="panier_vide.html" method="post">
+                
+                <input type="submit" name="suppression" value="Supprimez article">
+
+            </form>
+
+        </section>
+
+
+        <section class="paiement">
+                <h2>Paiement</h2>
+
+                    <form>
+                        <label>Merci d'indiquer votre code promo : <input type="text" name="codePromo"> </label>
+                        <input id="proceed" type="submit" name="envoyer" value="procéder au paiement">
+
+                    </form>
+
+
+        </section>
+
+
+        <section class="recap">
+            
+            <h2>Recapitulatif</h2>
+
+            <p>Produit : <span>1</span><br>Total : <span>40€</span></p>
+
+        </section>
+
+        <footer>
+            <ul class="UL1">
+                <li><a href="remerciement.html">Remerciement</a></li>
+                <li><a href="presentation.html">Contact</a></li>
+                <li><a href="presentation.html">Qui sommes-nous ?</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+
+        </footer>
+
+    </body>
+
+
+ </html>
