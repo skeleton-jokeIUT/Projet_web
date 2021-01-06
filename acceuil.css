@@ -13,6 +13,11 @@ html
 	{
 	display: none;
 	}
+
+	.grid img
+	{
+		border-color: transparent;
+	}
 	
 	.recherche form
 	{
@@ -21,7 +26,7 @@ html
 	}
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 {
 	.recherche span
 	{
