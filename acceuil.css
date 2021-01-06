@@ -7,7 +7,20 @@ html
 
 @media all and (max-width: 480px)
 {
+	#test2
+	{
 
+	width: 20%;
+	border-style: ridge;
+	border-color: white;
+	border-radius: 1em;
+	height: 50.5%;
+	position: fixed;
+	top : 30.5%;
+	left : 78%;
+	
+	}
+	
 
 }
 
