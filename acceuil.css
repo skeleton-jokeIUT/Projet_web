@@ -5,20 +5,18 @@ html
    background-image:url(img/fond_bois.jpg);
 }
 
-@media all and (max-width: 480px)
+@media screen and (max-width: 600px)
 {
 	#test2
 	{
-
-	width: 20%;
+	margin-left: 2em;
+	width: 72%;
+	height: 25em;
+	display: grid;
+	margin-top: 3em;
+	border-radius: 1em;
 	border-style: ridge;
 	border-color: white;
-	border-radius: 1em;
-	height: 50.5%;
-	position: fixed;
-	top : 30.5%;
-	left : 78%;
-	
 	}
 	
 
@@ -228,7 +226,7 @@ margin-left: : 8%;
 {
 	
 	margin-left: 2em;
-	width: 75%;
+	width: 72%;
 	height: 25em;
 	display: grid;
 	margin-top: 3em;
