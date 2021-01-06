@@ -5,21 +5,20 @@ html
    background-image:url(img/fond_bois.jpg);
 }
 
-@media screen and (max-width: 600px)
+
+
+@media screen and (max-width: 1000px)
 {
 	#test2
 	{
-	margin-left: 2em;
-	width: 72%;
-	height: 25em;
-	display: grid;
-	margin-top: 3em;
-	border-radius: 1em;
-	border-style: ridge;
-	border-color: white;
+	display: none;
 	}
 	
-
+	.recherche form
+	{
+		margin-left: 2%;
+		width: 70%
+	}
 }
 
 
@@ -167,10 +166,11 @@ height: 30%;
 
 .grid
 {
-
+	
 	margin-top: 3%;
 	margin-left:3%;
-	width: 100%;
+	width: 95%;
+	height: 80%;
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 1fr 1fr;
@@ -238,8 +238,8 @@ margin-left: : 8%;
 .test h2
 {
 	margin-top: -2%;
-	margin-left: 5.8%;
-	width: 15%;
+	margin-left: 6%;
+	width: 5.5em;
 	color :white;
 	font-size: 190%;
 	
@@ -268,23 +268,23 @@ height: 10px;
 
 #test2
 {
-	
-	width: 20%;
-	border-style: ridge;
-	border-color: white;
-	border-radius: 1em;
-	height: 57.5%;
-	position: fixed;
-	top : 36.5%;
-	left : 78%;
-	
+    float: right;
+    width: 20%;
+    border-style: ridge;
+    border-color: white;
+    border-radius: 1em;
+    height: 57.5%;
+    position: fixed;
+    top : 36.5%;
+    left : 78%;
+    
 }
 
 #test2 h2
 {
 	margin-top: -8%;
 	margin-left: 35.7%;
-	width: 60%;
+	width: 6em;
 	text-align: center;
 	color :white;
 	

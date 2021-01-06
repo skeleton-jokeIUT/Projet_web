@@ -6,6 +6,20 @@ html {
  
 }
 
+@media screen and (max-width: 1000px)
+{
+	#test2
+	{
+	display: none;
+	}
+	
+	.recherche form
+	{
+		margin-left: 2%;
+		width: 70%
+	}
+}
+
 .none
 {
 	position: absolute;
