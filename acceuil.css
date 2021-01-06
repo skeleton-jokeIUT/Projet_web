@@ -21,13 +21,10 @@ html
 	
 	.recherche form
 	{
-		margin-left: 2%;
+		margin-left: 5%;
 		width: 70%
 	}
-}
 
-@media screen and (max-width: 800px)
-{
 	.recherche span
 	{
 		position: absolute;
