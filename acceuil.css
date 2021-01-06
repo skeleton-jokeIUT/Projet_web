@@ -21,6 +21,16 @@ html
 	}
 }
 
+@media screen and (max-width: 600px)
+{
+	.recherche span
+	{
+		position: absolute;
+		margin-top: -4em;
+		right: :1em;
+	}
+}
+
 
 .none
 {
